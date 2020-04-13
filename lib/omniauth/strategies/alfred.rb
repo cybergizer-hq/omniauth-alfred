@@ -3,7 +3,7 @@ require 'json'
 
 module OmniAuth
   module Strategies
-    class Alfred < OmniAuth::Strategies::OAuth
+    class Alfred < OmniAuth::Strategies::OAuth2
       option :name, :alfred
 
       option :client_options,
