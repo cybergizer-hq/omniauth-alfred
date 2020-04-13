@@ -7,9 +7,9 @@ module OmniAuth
       begin
         require 'dotenv' unless defined?(ENV)
 
-        ALFRED_APP_URL = ENV.fetch('ALFRED_APP_URL', 'http://localhost:3000')
+        ALFRED_APP_URL = ENV.fetch('ALFRED_APP_URL', 'https://alfred-cg.herokuapp.com')
       rescue LoadError
-        ALFRED_APP_URL = 'http://localhost:3000'
+        ALFRED_APP_URL = 'https://alfred-cg.herokuapp.com'
       end
 
       option :name, :alfred
